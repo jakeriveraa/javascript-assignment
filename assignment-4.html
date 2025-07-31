@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 4</title>
+  <link rel="stylesheet" href="assignment4.css">
+</head>
+<body>
+    <h1>🌡️ Temperature Dashboard</h1>
+  <div>
+    <h2>Convert a Temperature</h2>
+    <div class="button-group">
+      <button onclick="convertToFahrenheit()">Celsius ➡ Fahrenheit</button>
+      <button onclick="convertToCelsius()">Fahrenheit ➡ Celsius</button>
+    </div>
+    <div id="thermometer"></div>
+    <p id="result"></p>
+  </div>
+
+  <div>
+    <h2>Conversion Table (0 to 100 °C)</h2>
+    <button onclick="generateTable()">Generate Table</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Celsius (°C)</th>
+          <th>Fahrenheit (°F)</th>
+        </tr>
+      </thead>
+      <tbody id="tempTable"></tbody>
+    </table>
+  </div>
+
+  <script src="scripts/assignment4.js"></script>
+</body>
+</html>
